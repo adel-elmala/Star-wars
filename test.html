@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title> Angular 1 </title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="app.css">
+  </head>
+
+  <body>
+
+
+    <header >
+      <img  id="logo" src="imgs/starwars.png" alt="logo">
+    </header>
+
+    <!-- MAIN Layer -->
+    <div class="container">
+
+      <div class="row">
+        <div class="col-md-3 col-sm-6" class="custom" id="people" >
+          <a href="#"><img src="imgs/char2.jpg" alt="characters" class="img-responsive" ></a>
+          <h2 id="herostext">Heros</h2>
+        </div>
+
+        <div class="col-md-3 col-sm-6" class="custom" id="planets" >
+            <a href="#"><img src="imgs/planet2.jpg" alt="planets" class="img-responsive" ></a>
+            <h2 id="planetstext">Planets</h2>
+
+        </div>
+
+        <div class="col-md-3 col-sm-6" class="custom" id="films" >
+            <a href="#"><img src="imgs/film1.png" alt="films" class="img-responsive" ></a>
+            <h2 id="filmstext">Films</h2>
+        </div>
+
+        <div class="col-md-3 col-sm-6" class="custom" id="starships" >
+          <a href="#"><img src="imgs/starship2.jpg" alt="starships" class="img-responsive" ></a>
+            <h2 id="starshipstext">Starships</h2>
+
+        </div>
+
+      </div>
+
+    </div>
+    <!-- END  -->
+    <!-- <div class="herosection" ng-app="App1" ng-controller="Ctrl1">
+      <h1>{{people}}</h1>
+
+    </div> -->
+
+
+
+
+
+
+
+
+
+    <!-- <div  class="captions" class="col-md-3 col-sm-6">
+      <h2>Heros</h2>
+      <h2>Planets</h2>
+      <h2>Films</h2>
+      <h2>Starships</h2>
+
+    </div> -->
+
+<div class="herosection" ng-app="myApp" ng-controller="myCtrl">
+
+      <h1>{{people.name}}</h1>
+      <h1>{{people.films}}</h1>
+      <h1>{{people.skin_color}}</h1>
+
+    </div>
+<div class="herosection" ng-app="myApp" ng-controller="myCtrl">
+
+      <h1>{{starship.name}}</h1>
+      <h1>{{starship.cost_in_credits}}</h1>
+      <h1>{{starship.cargo_capacity}}</h1>
+      <h1>{{starship.films}}</h1>
+
+    </div>
+<div class="herosection" ng-app="myApp" ng-controller="myCtrl">
+
+      <h1>{{film.title}}</h1>
+      <h1>{{film.planets}}</h1>
+      <h1>{{film.starships}}</h1>
+      <h1>{{film.characters}}</h1>
+
+    </div>
+<div class="herosection" ng-app="myApp" ng-controller="myCtrl">
+
+      <h1>{{planet.name}}</h1>
+      <h1>{{planet.population}}</h1>
+      <h1>{{planet.films}}</h1>
+      <h1>{{planet.gravity}}</h1>
+
+    </div>
+
+
+
+
+    <script src="app.js" charset="utf-8"></script>
+  </body>
+</html>
